@@ -5,7 +5,9 @@ python:
   - 3.8
 before_install:
   - python --version
-  - pip install -U pip
+  - pip install -U pip pipenv
+  - pipenv lock --requirements > requirements.txt
+  - pipenv lock --dev --requirements > test_requirements.txt
 install:
   - pip install -U -r requirements.txt
   - pip install -U -r test_requirements.txt
