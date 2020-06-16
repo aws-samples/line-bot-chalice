@@ -1,3 +1,7 @@
+# Pipenv
+requirements.txt
+test_requirements.txt
+
 # Chalice
 .chalice/config.json
 .chalice/deployed
